@@ -5,26 +5,24 @@ const app = express();
 const port = 3000;
 const {createCompletionChatGTP} = require("./chatgptapi")
 
-const chatGptApiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
-
-
+app.use(express(express.json()))
 
 // API endpoint to generate Shayari
-app.get('/shayari', async (req, res) => {
-  const keyword = req.query.keyword;
-  
-  if (!keyword) {
-    return res.status(400).json({ error: 'Please provide a keyword.' });
-  }
-
+app.post('/shayari', async (req, res) => {
+  const { program, language } = req.body;
+  console.log(program,language)
   try {
-    const { data } = await createCompletionChatGTP({
-        message: `Write shayari two long for ${keyword} and short one sentence 3 shayari's `,
-      });
 
-      let contentArray = data.choices[0]?.text.trim()
-    console.log(contentArray)
-    return res.json({ contentArray});
+    const msg= `Convert this  function add(a, b) {return a + b}  code to python programming language
+
+     
+  }`
+  console.log(msg)
+    const { data } = await createCompletionChatGTP({
+        message:msg,
+      }); 
+    console.log(data)
+    return res.json({ data});
   } catch (error) {
     return res.status(500).json({ error: 'Error generating Shayari.',err:error.message});
   }

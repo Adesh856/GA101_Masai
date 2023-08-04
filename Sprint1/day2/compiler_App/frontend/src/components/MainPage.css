@@ -1,0 +1,33 @@
+/* Styles for the main page layout */
+.flex {
+    display: flex;
+    width: 100%;
+  }
+  
+  .flex>div{
+    width: 50%;
+    height: 100vh;
+  }
+  /* Right Section */
+  .bg-gray-100 {
+    background-color: #0e0d0d;
+    color: white;
+  }
+  
+  /* Adjust the nav bar height */
+  .navbar {
+    height: 64px;
+  }
+  
+  /* Make the Monaco Editor half of the screen width */
+  .monaco-editor {
+    width: 50%;
+  }
+  
+  /* Set Monaco Editor to full screen height */
+  .monaco-editor .monaco-editor-background,
+  .monaco-editor .overflow-guard,
+  .monaco-editor .monaco-editor-contents {
+    height: 100%;
+  }
+  

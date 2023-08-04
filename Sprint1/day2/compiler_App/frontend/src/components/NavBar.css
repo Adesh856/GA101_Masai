@@ -1,0 +1,41 @@
+/* NavBar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #022c55;
+    padding: 0.5rem;
+    color: white;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+  }
+  
+  .convert-btn,
+  .debug-btn {
+    background-color: #4299e1;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .convert-btn:hover,
+  .debug-btn:hover {
+    background-color: #3182ce;
+  }
+  
+  .language-select {
+    background-color: white;
+    color: #2d3748;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
