@@ -19,7 +19,7 @@ while True:
         break
     print("Your choice:",user_choice)
     
-    if user_choice!="rock" or user_choice!="paper" or user_choice!="scissors":
+    if user_choice!="rock" and user_choice!="paper" and user_choice!="scissors":
         print("\nPlease choose only rock, paper or scissors\n")
         break
     

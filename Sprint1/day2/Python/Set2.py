@@ -73,3 +73,57 @@ for i in list1:
        li.append( f"{i} {j}")
 
 print(li)        
+
+
+# Problem 7: Iterate both lists simultaneously
+list1 = [10, 20, 30, 40]
+list2 = [100, 200, 300, 400]
+list2.reverse()
+
+for i in range(len(list1)):
+    print(f"{list1[i]} {list2[i]}")
+
+
+#problem:-8
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+newdict={}
+for name in employees:
+    newdict[name]=defaults
+    
+print(newdict)    
+
+
+##problem 9
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
+
+# Keys to extract
+sample_dict_output={}
+
+for key,value in sample_dict.items():
+    if key is "name" or key is "salary":
+        sample_dict_output[key]=value
+        
+print(sample_dict_output)        
+        
+        # Problem 10: Modify the tuple
+
+tuple1 = (11, [22, 33], 44, 55)
+for ele in tuple1:
+    if isinstance(ele, list):
+         ele[0]=222
+      
+print(tuple1)       
+
+
+
+
+ 
+        
+
+
+
