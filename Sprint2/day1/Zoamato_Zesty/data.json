@@ -1,0 +1,55 @@
+{
+    "menu": [
+        {
+            "dish_id": "1",
+            "name": "Margherita Pizza",
+            "price": 10.99,
+            "availability": true
+        },
+        {
+            "dish_id": "2",
+            "name": "Pasta Alfredo",
+            "price": 8.99,
+            "availability": true
+        },
+        {
+            "dish_id": "3",
+            "name": "Chicken Biryani",
+            "price": 12.99,
+            "availability": true
+        },
+        {
+            "dish_id": "4",
+            "name": "samosa",
+            "price": 42.0,
+            "availability": true
+        }
+    ],
+    "orders": [
+        {
+            "customer_name": "adesh",
+            "order_dishes_id": [
+                {
+                    "dish_id": "1",
+                    "name": "Margherita Pizza",
+                    "price": 10.99,
+                    "availability": true
+                },
+                {
+                    "dish_id": "2",
+                    "name": "Pasta Alfredo",
+                    "price": 8.99,
+                    "availability": true
+                },
+                {
+                    "dish_id": "3",
+                    "name": "Chicken Biryani",
+                    "price": 12.99,
+                    "availability": true
+                }
+            ],
+            "order_id": 3,
+            "status": "served"
+        }
+    ]
+}
