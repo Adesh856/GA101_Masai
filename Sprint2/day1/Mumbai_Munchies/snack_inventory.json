@@ -9,12 +9,6 @@
         "snack_id": "54",
         "name": "jalebi",
         "price": 14.0,
-        "availability": "no"
-    },
-    {
-        "snack_id": "4",
-        "name": "Upma",
-        "price": 30.0,
         "availability": "yes"
     },
     {

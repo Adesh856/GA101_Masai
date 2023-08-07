@@ -113,12 +113,11 @@ def record_sale(snack_id, quantity_sold):
     for snack in Inventory:
         if snack["snack_id"]==snack_id:
             if snack["availability"]=="yes" and quantity_sold>0:
-                snack["availability"]="no"
                 if snack_id not in sales_record:
                     sales_record[snack_id]=quantity_sold
                 else:
                       sales_record[snack_id]+=quantity_sold   
-                save_inventory(Inventory.__dict__) 
+                save_inventory(Inventory) 
                 save_sales_record(sales_record)
                 print("Sale recorded successfully!")
                 return
@@ -127,7 +126,7 @@ def record_sale(snack_id, quantity_sold):
                 return   
 
 def save_sales_record(sales_record_data):
-    with open('sales_record.json', 'w') as file:
+    with open('./', 'w') as file:
         json.dump(sales_record_data, file, indent=4)        
         
         
