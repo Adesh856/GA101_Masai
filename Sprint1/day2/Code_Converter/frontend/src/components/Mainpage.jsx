@@ -77,11 +77,11 @@ const MainPage = () => {
           <option value="ruby">Ruby</option>
           {/* ...and so on */}
         </select>
-
+       
         {/* Debug Button */}
         <button className="debug-btn" onClick={((e)=>handleCodeConverter(e))}>Convert</button>
       </div>
-
+      <h3 className="logo" >CodeDCQ</h3>
       {/* Convert Button */}
       <button className="convert-btn"onClick={((e)=>handledebug(e))} >Debug</button>
       <button className="convert-btn"onClick={((e)=>handlequalitycheck(e))} >Quality</button>
